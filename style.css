@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+    margin-top: 200px;
+    font-size: xx-large;
+    border: 2px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    width: 1475px;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    flex-basis: content;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 800px;
+    justify-content: space-around;
+}
+.picture {
+  align-self: self-end;
+  width: 50%;
+  height: 50%;
+}
+
+.about {
+   width: 200px;
+   text-align: center;
+   height: 500px;
+   border: 1px solid black;
+   background-image: url(background-image-1.jpeg);
+   color: coral;
+}
+
+.education {
+  text-align: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 500px;
+  background-image: url(background-image-2.jpeg);
+  color: burlywood;
+}
+
+.goals{
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 500px;
+    background-image: url(background-image-3.jpeg);
+    color: wheat;
+}
+
+footer {
+    margin-left: 10px;
+}
+
