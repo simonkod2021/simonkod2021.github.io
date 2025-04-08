@@ -1,0 +1,158 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: 1000px;
+    border: 1px solid black;
+    height: 800px;
+  }
+
+.dropbtn1{
+    background-image: url(images/background-image-1.jpeg);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+  }
+  
+  .dropbtn2 {
+    background-image: url(images/background-image-2.jpeg);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+  }
+  
+  .dropbtn3 {
+    background-image: url(images/background-image-3.jpeg);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+  }
+
+
+  .about {
+    align-self: flex-start;
+    width: 200px;
+    text-align: center;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url(images/background-image-1.jpeg);
+    color: coral;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-about {
+    position: relative;
+    display: none;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-about a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-about a:hover{background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-about {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn1 {
+    background-color: #3e8e41;
+  }
+
+
+
+  .education {
+    align-self: center;
+    text-align: center;
+    width: 200px;
+    height: 500px;
+    background-image: url(images/background-image-2.jpeg);
+    color: burlywood;
+  }
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-education {
+    position: relative;
+    display: none;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-education a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-education a:hover{background-color: #f1f1f1}
+  
+  .dropdown2:hover .dropdown-education {
+    display: block;
+  }
+  
+
+
+  .goals{
+    text-align: center;
+    width: 200px;
+    height: 500px;
+    background-image: url(images/background-image-3.jpeg);
+    color: wheat;
+  }
+
+
+  .dropdown3 {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-goals {
+    position: relative;
+    display: none;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-goals a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-goals a:hover{background-color: #f1f1f1}
+  
+  .dropdown3:hover .dropdown-goals {
+    display: block;
+  }
