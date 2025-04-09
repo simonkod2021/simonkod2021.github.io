@@ -1,5 +1,4 @@
 .dropbtn1{
-    border-top: 0;
     background-image: url(images/nightsky.jpg);
     color: white;
     padding: 16px;
@@ -8,8 +7,7 @@
     cursor: pointer;
     height: 50px;
     width: 200px;
-    border: 1px solid black;
-    border-top: 0px;
+    position: relative;
   }
   
   .dropbtn2 {

@@ -4,7 +4,6 @@ h1 {
     font-size: xx-large;
     width: 1475px;
     margin: auto;
-    margin-top: 20px;
 }
 
 
@@ -15,7 +14,6 @@ h1 {
   flex-basis: 900px;
   height: 790px;
   flex-wrap:nowrap;
-  border: 1px solid black;;
 }
 
 .collapsible-container {
@@ -27,8 +25,9 @@ h1 {
 
 .slideshow-container {
   width: 500px;
-  position: relative;
-  justify-content: space-evenly;
+  position: absolute;
+  justify-content: center;
+  margin-top:375px
 }
 
 .mySlides {
@@ -142,13 +141,14 @@ nav {
   text-align: center;
   font-size: 20px;
   border: 1px solid black;
-  height: 40px;
-  margin-top: 30px;
+  height: 50px;
+  margin-top: 15px;
 }
 
 footer {
   text-align: left;
   margin-top: auto;
   height: auto;
+  margin-left: 15px;
 }
 
