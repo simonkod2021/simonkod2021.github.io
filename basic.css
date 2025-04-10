@@ -10,16 +10,3 @@ body {
     background-image: url(images/Nature-Minimalist-Wallpaper-1920x1080-64725.jpg);
     line-height: 25px;
 }
-@media screen and (max-width: 700px) {
-    body {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-  }
-  @media screen and (max-width: 400px) {
-    h1 {
-      text-align: center;
-      float: none;
-    }
-  } 
