@@ -12,15 +12,16 @@ h1 {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap:nowrap;
-  border: 1px solid black;
   height: 100%;
 }
 
 
 .slideshow-container {
-  max-width: 1000px;
+  width: 25%;
   position: relative;
   margin: auto;
+  align-self: center;
+  height: 25%
 }
 
 .sidebar {
@@ -76,26 +77,22 @@ h1 {
   }
 } 
 
-
 .mySlides {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
+  display: none;
 }
 
 
 .prev, .next {
   cursor: pointer;
-  position: relative;
+  position: absolute;
   top: 50%;
   width: auto;
+  margin-top: -22px;
   padding: 16px;
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: background-color 0.6s ease;
+  transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -162,6 +159,7 @@ nav {
 footer {
   text-align: left;
   margin-top: auto;
+  margin-left: auto;
 }
 
 header {
