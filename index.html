@@ -2,82 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Simon Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="basic.css">
     <link rel="stylesheet" href="dropdown.css">
-    <link rel="icon" href="images/money-bag-icon.png">
-
+    <link rel="icon" href="images/money-bag-icon.png" type="image/png">
 </head>
 <body>
-    <header><h1>Simon Portfolio</h1></header>
-    <nav>Navigation Bar</nav>
-    <div class="container">
-        <div class="dropdown">
-        <button class="dropbtn1">About</button>
-        <div class="dropdown-about"><p class="about">Name: Simon Larsson<br>Age: 26 <br>Adress: Gulsparvsgatan 61 <br>Phone: 073-7079829 <br>E-mail: simon98larsson@gmail.com</p>
+
+    <div class="sidebar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Education</a>
+        <a href="#about">Skills</a>
+        <div class="sidebar-content">
+            <!-- Your sidebar content here -->
         </div>
     </div>
-    <div class="dropdown2">
-        <button class="dropbtn2">Education</button>
-        <div class="dropdown-education"><p class="education">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum odio earum, harum, hic ipsum laudantium architecto assumenda maxime numquam saepe provident neque! Perspiciatis nemo facere autem vel tempore rerum commodi?</p></div>
-    </div>
-    <div class="dropdown3">
-        <button class="dropbtn3">Skills</button>
-        <div class="dropdown-goals"><p class="goals">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum odio earum, harum, hic ipsum laudantium architecto assumenda maxime numquam saepe provident neque! Perspiciatis nemo facere autem vel tempore rerum commodi?</p></div>
+    <header>
+        <h1>Simon Portfolio</h1>
+        <nav>Navigation Bar</nav>
+    </header>
+        <main>
+        <div class="container">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="images/carousel/nightsky-shooting-star.jpg" style="max-width: 100%" alt="Night sky with shooting star">
+                    <div class="text">Picture 1</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="images/carousel/night-sky-background-t51mgpcffjvz4ja6.webp" style="max-width: 100%" alt="Night sky background">
+                    <div class="text">Picture 2</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="images/carousel/night-sky-background-tuvliumfllau73g1.webp" style="max-width: 100%" alt="Night sky with stars">
+                    <div class="text">Picture 3</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)" aria-label="Previous slide">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)" aria-label="Next slide">&#10095;</a>
+
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)" aria-label="Slide 1"></span>
+                    <span class="dot" onclick="currentSlide(2)" aria-label="Slide 2"></span>
+                    <span class="dot" onclick="currentSlide(3)" aria-label="Slide 3"></span>
+                </div>
+            </div>
+        </main>
     </div>
 
-    <div class="collapsible-container">
-
-    <button type="button" class="collapsible">Facts</button>
-    <div class="content">
-        <p>I love planets!</p>
-    </div>
     <script src="script.js"></script>
 </div>
-
-    <div class="slideshow-container">
-            <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <img src="images/carousel/nightsky-shooting-star.jpg" style="max-width: 100%">
-            <div class="text">Picture 1</div>
-            </div>
-
-            <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <img src="images/carousel/night-sky-background-t51mgpcffjvz4ja6.webp" style="max-width: 100%">
-            <div class="text">Picture 2</div>
-            </div>
-
-            <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <img src="images/carousel/night-sky-background-tuvliumfllau73g1.webp" style="max-width: 100%">
-            <div class="text">Picture 3</div>
-            </div>
-
-            <div class="mySlides fade">
-            <div class="numbertext">4 / 5</div>
-            <img src="images/carousel/night-sky-background-yr1txlsi2os2h1bp.webp" style="max-width: 100%">
-            <div class="text">Picture 4</div>
-            </div>
-
-            <div class="mySlides fade">
-            <div class="numbertext">5 / 5</div>
-            <img src="images/carousel/istockphoto-1381158831-612x612.jpg" style="max-width: 100%">
-            <div class="text">Picture 5</div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <div style="text-align: center;">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-    </div>
-</div>
+<footer>
+    <p>Copyright by Simon Larsson</p>
+</footer>
 </body>
-<footer>Copyrighted by Simon Larsson</footer>
 </html>
