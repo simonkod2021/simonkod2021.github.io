@@ -19,92 +19,55 @@ h1 {
   }
 } 
 
-
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap:wrap;
   width: 100%;
-  margin: 0 auto;
+  height: 100%;
+  margin: auto;
   padding: 0 15px;
   
 }
 @media (max-width: 400px) {
   .container {
-    flex-direction: column;
     width: 90%;
     padding: 0 20px;
+    height: 100%;
   }
 }
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
     width: 90%;
     padding: 0 20px;
+    height: 100% auto;
   }
 }
 
 
 .slideshow-container {
-  width: 30%;
+  width: 25%;
   position: relative;
   margin: auto;
   align-self: center;
-  height: 30%
+  height: 25%;
+  margin-top: 20px;
 }
-
-.sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  height: 225px;
-  padding:0;
-  z-index: 100;
-}
-
-.sidebar a {
-  display: block;
-  padding: 12px 16px;
-  color: black;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.sidebar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-.sidebar-content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-@media screen and (max-width: 700px) {
-  .sidebar {
+@media (max-width: 400px) {
+  .slideshow-container {
     width: 100%;
-    height: auto;
-    position: relative;
+    height: 100%;
   }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+}
+@media (max-width: 768px) {
+  .slideshow-container {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-} 
 
 .mySlides {
   display: none;
@@ -138,7 +101,7 @@ h1 {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
   bottom: 8px;
   width: 100%;
   text-align: center;
@@ -177,13 +140,46 @@ h1 {
   to {opacity: 1}
 }
 
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+
+}
+
+.tabcontent {
+  color: rgb(0, 0, 0);
+  display: none;
+  text-align: center;
+}
+
+#About {background-color: white;border: 1px solid black; margin: auto; text-align: center;}
+#Education {background-color: white; border: 1px solid black; text-align: center;}
+#Skills {background-color: white; border: 1px solid black; text-align: center;}
+
 nav {
   text-align: center;
 }
 
 footer {
   text-align: left;
+  align-self: flex-end;
   margin-bottom: auto;
-  margin-left: auto;
+  margin-left:5px;
+
+}
+
+header {
+  margin: auto;
 }
 
